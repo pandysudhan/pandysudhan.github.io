@@ -89,3 +89,34 @@ This approach achieves concurrency without using asyncio.gather.
 <div id="div_id"></div>
 
 # Heading2
+
+
+Copy code
+import asyncio
+
+async def task1():
+    print("Task 1 started")
+    await asyncio.sleep(2)  # Simulate some asynchronous task
+    print("Task 1 completed")
+
+async def task2():
+    print("Task 2 started")
+    await asyncio.sleep(1)  # Simulate another asynchronous task
+    print("Task 2 completed")
+
+async def main():
+    # Create a list of tasks to run concurrently
+    tasks = [task1(), task2()]
+
+    # Run the tasks concurrently
+    await asyncio.gather(*tasks)
+
+# Run the main function
+asyncio.run(main())
+In this example:
+
+task1 and task2 are two asynchronous functions that simulate some asynchronous tasks using asyncio.sleep.
+The main function creates a list of tasks and then uses asyncio.gather to run them concurrently.
+The asyncio.run(main()) at the end executes the main function.
+When you run this script, you'll see that "Task 1" and "Task 2" messages are interleaved, indicating that the tasks are running concurrently. The await keyword is used to pause the execution of a task without blocking the entire program, allowing other tasks to run in the meantime.
+
