@@ -1,0 +1,240 @@
+%-------------------------
+% Resume in LaTeX
+% Author: Sudhan Pandey
+% License: 
+%------------------------
+
+\documentclass[legalpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\input{glyphtounicode}
+\usepackage{fontawesome}
+
+%----------FONT OPTIONS----------
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-1pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubSubheading}[4]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]} 
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}} 
+\newcommand{\resumeItemListStart}{\begin{itemize}} 
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
+
+%-------------------------
+% Header fields
+\def \linkedinicon {\faLinkedin}
+\def \linkedinlink {https://www.linkedin.com/in/pandysudhan/}
+\def \linkedintext {Sudhan Pandey}
+
+\def \emailicon {\faEnvelope}
+\def \emaillink {mailto:pandysudhan@gmail.com}
+\def \emailtext {pandysudhan@gmail.com}
+
+\def \githubicon {\faGithub}
+\def \githublink {https://github.com/pandysudhan}
+\def \githubtext {pandysudhan}
+
+\def \phoneicon {\faPhone}
+\def \phonelink {tel:615-935-2577}
+\def \phonetext {(615)-935-2577}
+
+\def \personalWebsiteLink {https://www.pandysudhan.com.np}
+\def \personalWebsiteText {\textbf{\huge \scshape Sudhan Pandey}}
+
+\def \Mathemagics {https://github.com/pandysudhan/mathemagics}
+
+\definecolor{LinkColor}{HTML}{0000}
+
+\def \linkedin {\linkedinicon\hspace{3pt}\textcolor{LinkColor}{\href{\linkedinlink}{\linkedintext}}}
+\def \email {\emailicon\hspace{3pt}\textcolor{LinkColor}{\href{\emaillink}{\emailtext}}}
+\def \github {\githubicon \hspace{3pt}\textcolor{LinkColor}{\href{\githublink}{\githubtext}}}
+\def \phone {\phoneicon\hspace{3pt}\textcolor{LinkColor}{\href{\phonelink}{\phonetext}}}
+\def \personalWebsite {\textcolor{LinkColor}{\href{\personalWebsiteLink}{\personalWebsiteText}}}
+
+\def \flashcodetext {Github}
+\def \flashcodetexts {Website}
+
+\def \CodeM {\textcolor{LinkColor}{\href{\Mathemagics}{\flashcodetext}}}
+\def \MathemagicsCall {\textcolor{LinkColor}{\href{https://mathemagics.pandysudhan.com.np}{\flashcodetexts}}}
+\def \codeN {\textcolor{LinkColor}{\href{https://github.com/pandysudhan/nano_gpt}{\flashcodetext}}}
+
+%-------------------------
+% Begin Document
+\begin{document}
+
+% Header block
+\begin{center}
+  {\personalWebsite} \\ \vspace{3pt}
+  {\email} $|$ 
+  {\phone} $|$ 
+  {\linkedin} $|$
+  {\github}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Fisk University }{Aug 2022 - May 2026}
+    {Bachelor of Science in Computer Science, \textbf{GPA 3.98/4.0}}{Nashville, TN}
+    \resumeItemListStart
+      \resumeItem{\textbf{Relevant Coursework:} Data Structures and Algorithms, Machine Learning, Data Science, Introduction to Computer Science I(Google In Residence) \& II, Computer Organization, Social Implications of Computer Technology, Calculus I \& II, Discrete Mathematics, Linear Algebra}
+      \resumeItem{\textbf{Honors and Awards:} Recipient of Ella Shepherd Moore Provost Scholarship - Fisk University(Full Tuition), Goldman Sachs Market Madness Scholar(2023),  Fall \& Spring (2022 \& 2023) President's List, Fisk Executive Leadership Scholar(2023), CFA Ambassador (2023-2024)}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Languages: } Python, Java, Javascript, Typescript, C, HTML/CSS \\
+    \textbf{Frameworks and Libraries: } NumPy, Panda, Scikit-learn, PyTorch, TensorFlow, React.js, Node.js, Flask, Express, MySQL \\
+    \textbf{Developer Tools: } AWS S3, Git, Cloudflare, React-Redux, Postman, VS-Code, Vercel, Netlify, Firebase
+  }}
+\end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Machine Learning Research Intern\textnormal}{March 2024 - May 2024, Aug 2024 - Present}
+    {Department Of Energy, SRNL}{}
+    \resumeItemListStart[label = {$\bullet$}]
+      \resumeItem{Worked as an ML Intern with \textbf{Savannah River National Laboratory} for \textbf{blind calibration} of Wireless Sensor Networks using \textbf{deep learning}}
+      \resumeItem{Coordinated with team to create a \textbf{CNN based drift projection} model}
+      \resumeItem{Implemented \textbf{attention mechanism} fundamentals for time series dependency of sensor data}
+      \resumeItem{Working with web development team to create a \textbf{frontend} demo to display the results of the calibration}
+      \resumeItem{\textbf{Skills learned: } \textit{Pytorch, numpy, pandas, blind calibration, reactjs, nodejs}}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {STEP Intern\textnormal}{May 2024 - August 2024}
+    {Google}{}
+    \resumeItemListStart[label = {$\bullet$}]
+      \resumeItem{Created an analytical dashboard for Google Store frontend engineers to identify and target the \textbf{most significant} asset to work on to \textbf{improve Google store} website performance}
+      \resumeItem{Eliminated the need to run audits manually \textbf{100+ audits} (saving \textbf{10+ SWE minutes} every audit)}
+      \resumeItem{Used \textbf{lighthouse API} to run audits on each page of the website and find \textbf{opportunities} to work on}
+      \resumeItem{Used the \textbf{dashboard} to identify and refactor legacy stylesheet in Google store homepage, \textbf{saving 705kb+} of CSS and \textbf{improve lighthouse score} from \textbf{53 to 59}}
+      \resumeItem{Consulted with frontend team to build a new UI Data Mocking tool and laid the foundation (aiming to reduce \textbf{mock time from 30 minutes to 4-5 seconds})}
+      \resumeItem{Learned in detail about the \textbf{google frontend infrastructure} and how \textbf{google production server} works}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {STEP Intern}{May 2023 - August 2023}
+    {Google}{}
+    \resumeItemListStart[label = {$\bullet$}]
+      \resumeItem{Worked with \textbf{Cloud UFO} team on turning up \textbf{virtual cells}, an abstraction of many physical cells within a \textbf{datacenter}, for efficient resource planning, scheduling and executing workloads}
+      \resumeItem{Deployed \textbf{4 monitoring dashboards} in GMon language to monitor the health of components of the virtual cell}
+      \resumeItem{Used in \textbf{production by the UFO Organization team} to test an ongoing virtual cell turnup in July 2023}
+      \resumeItem{Learned about the concept of \textbf{synthetic/black-box monitoring} with probers}
+      \resumeItem{Collaborated and researched with \textbf{4 different teams} to learn about their specific components and their health monitoring}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Technical Projects}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Nano GPT\hspace{200pt}\textnormal{\codeN}}{September 2024}
+    {Python, Pytorch, Numpy}{}
+    \resumeItemListStart[label = {$\bullet$}]
+      \resumeItem{Implemented a scaled-down version of \textbf{GPT architecture} using PyTorch, focusing on tokenization, embedding, and transformer blocks}
+      \resumeItem{Trained the model on Shakespeare's corpus, \textbf{fine-tuning} it to generate stylistic text}
+      \resumeItem{Developed \textbf{multi-head attention}, positional encoding, and transformer blocks from scratch}
+      \resumeItem{Acquired advanced \textbf{PyTorch} and deep understanding of \textbf{GPT model architecture}}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Mathemagics\hspace{185pt}\textnormal{\MathemagicsCall/}\textnormal{\CodeM}}{January 2024}
+    {Deep learning, Tensorflow, huggingface, numpy, React, Express, NodeJS, Flask, HTML, CSS}{}
+    \resumeItemListStart[label = {$\bullet$}]
+      \resumeItem{Developed a simple math quiz game using \textbf{CNN based hand written digit classification model}}
+      \resumeItem{Created the frontend with \textbf{reactjs and html canvas} to let users \textbf{draw} digits}
+      \resumeItem{Implemented a \textbf{flask api} to receive image and classify it for a given number}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EXTRA-CURRICULARS-----------
+\section{Extra-Curriculars}
+\resumeSubHeadingListStart
+  \resumeItem{\textbf{Fisk Computer Science Club} (August 2022 - Present)}
+  \resumeItem{\textbf{Fisk Rocket Science Club} (August 2022 - Present)}
+  \resumeItem{\textbf{Equinix-Fisk Hackathon Finalist} (August 2022)}
+\resumeSubHeadingListEnd
+
+\end{document}
